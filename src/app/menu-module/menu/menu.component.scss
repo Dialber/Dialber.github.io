@@ -1,0 +1,54 @@
+@import"../../../styles/vars";
+.menu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $color-secundary;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.menu__ul{
+    padding: 0;
+}
+.close{
+    align-self: flex-end;
+    padding: 0;
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-secundary;
+    &::before{
+        color: $color-primary;
+        font-size: 2.5rem;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+.menu__li{
+    padding-left: 1rem;
+    &:hover{
+        background-color: $color-primary;
+    }
+}
+.link{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: $color-primary;
+    font-weight: 200;
+    line-height: 2;
+    &:hover{        
+        color: $color-secundary;
+    }
+}
+.hide{
+    transform: translateX(-100%);
+}

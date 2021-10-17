@@ -1,0 +1,124 @@
+@import "./vars";
+@font-face {
+    font-family:'Montserrat', sans-serif;
+    src: ('assets/fonts/Monserrat/Montserrat-ExtraLight.ttf');
+}
+body{
+    width: 100%;
+	text-align: center;
+    margin: 0 auto;
+    color: $color-secundary;
+    background-color: $color-primary;
+    font-family:'Montserrat', sans-serif;
+    font-size: 90%;
+    letter-spacing: $letter-spacing;
+    word-spacing: $word-spacing; 
+    line-height:$line-height;
+    
+}
+*{
+    box-sizing: border-box;
+
+}
+html, body{
+    scroll-behavior: smooth;
+    font-size: .92rem;
+    
+}
+h1{
+    font-size: $font-h1;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: left;
+}
+h2,h3{    
+    line-height:1.2;
+    font-weight: 100;
+}
+    
+h2{
+    font-size: $font-h2;
+}
+img,video{
+    max-width: 100%;
+    height: auto;
+}
+p{
+    font-weight: 100;
+    font-size: $font-p;
+}
+a{
+    text-decoration: none;
+    font-size: $font-a;
+}
+span{
+    font-weight: bolder;
+    font-size:$font-span;
+}
+button{
+    font-size: $font-btn;
+    font-family: "Ubuntu",sans-serif;
+}
+textarea{
+    box-sizing: border-box;
+    font: inherit;
+}
+label{
+    text-align: left;
+}
+::placeholder{
+    color:$color-primary;    
+    text-transform: capitalize;
+}
+:focus{
+    outline: 0;
+}
+[type="submit"]{
+    border: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea{
+    
+    line-height:$line-height;
+}
+li{
+    list-style: none;
+}
+
+@media #{$landscape-phones}{
+    html, body{
+        font-size: 1rem;
+    }  
+}
+@media #{$tablets}{
+    html, body{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: $font-h1;
+    }
+}
+@media #{$desktops}{
+    html, body{
+        font-size: 1.3rem;
+    }
+}
+@media #{$large-desktops}{
+    html, body{
+        font-size: 1.40rem;
+    }
+}
+@media #{$extra-large-desktops}{
+    html, body{
+        font-size: 2.3rem;
+    }
+}
+
+@media #{$four-k}{
+    html, body{
+        font-size: 3.5rem;
+    }
+}

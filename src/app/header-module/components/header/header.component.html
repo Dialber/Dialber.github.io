@@ -1,0 +1,12 @@
+<header class="header">
+    <app-menu *ngIf="hide"></app-menu>
+    <button class="bi bi-list-nested menu" (click)=showMenu()></button>
+    <div class="container">
+        <p class="nombre">{{nombre}}</p>
+        <h1 class="h1">{{h1}}</h1>    
+    </div>
+    <div class="personal">
+        <img class="img" src="assets/img/small.jpg" alt="" srcset="">
+    </div>
+    <a href="" class="contact">{{contact}}</a>
+</header>
