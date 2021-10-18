@@ -12,6 +12,7 @@ import { SocialMediaComponent } from './components/social-media/social-media.com
   imports: [
     CommonModule,
     SharedRoutingModule
-  ]
+  ],
+  exports:[SocialMediaComponent]
 })
 export class SharedModule { }

@@ -1,23 +1,20 @@
 @import"../../../styles/vars";
-.menu{
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: $color-secundary;
-    z-index: 100;
+.menu{   
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 .menu__ul{
     padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
 }
 .close{
     align-self: flex-end;
     padding: 0;
     border: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +45,16 @@
     &:hover{        
         color: $color-secundary;
     }
+    &::before{
+        margin-right: 1.5rem;
+    }
 }
 .hide{
     transform: translateX(-100%);
+}
+@media #{$tablets}{
+    
+}
+@media #{$desktops}{
+   
 }

@@ -1,0 +1,20 @@
+@import"../../../../styles/vars";
+.social{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.social__li{
+    flex: 1;
+    display: flex;
+    margin-left: 1rem;
+}
+.social__a{
+    color:$color-secundary;
+    padding: 0 .5rem;    
+    &:focus{        
+        box-shadow: 0 0 .2rem 0 $color-secundary;
+    }
+}

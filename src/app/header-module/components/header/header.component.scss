@@ -3,23 +3,35 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2rem;
-    >*{        
-        margin-bottom: 3rem;
-    }
+    justify-content: flex-start;
+    align-items: flex-start;
     &::after{
         content: "";        
         height: 100%;
         width: .1rem;
-        box-shadow: .1rem 0 0 .1rem $color-lines;
         position: absolute;
         top: 0;
         left: 0;
     }
     .menu{
-        margin-bottom: 1rem;
+        margin: 1.2rem 0 3rem 1rem;
+    }
+}
+
+.containerMenu{
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    display: flex;
+    position: relative;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    >*{
+        margin-bottom: 3rem;
     }
 }
 .nombre,h1{
@@ -28,23 +40,23 @@
 .nombre{
     color: $gray;
     text-align: left;
+    margin-bottom: 1rem;
 }
 app-menu{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    z-index: 1000;
+    width: 100vw;
     height: auto;
+    background-color: $color-secundary;
 }
 .menu{
-    align-self: flex-start;
-    margin-left: .8rem;
+   
     position: relative;
     z-index: 20;
     color:$color-secundary;
     background-color: transparent;
     border: 0;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     &:hover{
         cursor: pointer;
     }
@@ -53,9 +65,11 @@ app-menu{
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    padding: 0 1rem 0;
     position: relative;
     z-index: 10;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img{
@@ -74,34 +88,70 @@ app-menu{
         background-color: transparent;
         border: .1rem solid $color-secundary;
         position: absolute;
-        top: -1rem;
-        left: -1rem;
+        top: -1.5rem;
+        left: -1.5rem;
         z-index: -1;
     }
 }
 .contact{
     display: none;
 }
+app-social-media{
+   display: none;
+}
 @media #{$tablets}{
+    .data{
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        margin-left: auto;
+        padding-top: 2.5rem;        
+    }
     .header{
         flex-direction: row;
-    }
-    .container,.personal{
-        width: 40%;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 48%, $color-lines 48%, $color-lines 48.5%, rgba(255,255,255,0) 48.5%);
+        background-size: 20%;
+        background-origin: margin-box;
     }
     .personal{
+        width: 35%;
         margin-top: 4rem;
+        position: relative;
+        top: -3rem;
+    }
+    
+    .container{
+        width:50%;
+        padding: 0;
+        margin-left: 0;
     }
     .contact{
         width: 20%;
     }
+    .containerMenu{
+        position: absolute;
+        top: 0;
+        height: 27rem;
+        width: 4rem;
+        background: linear-gradient(to bottom, rgba(28,28,28,0.17130602240896353) 0%, rgba(0,0,0,0) 100%);
+        .menu{
+            margin-left: 0;
+        }
+    }
+    app-social-media{
+        display: flex;
+        transform: rotate(90deg);
+    }
 }
 @media #{$desktops}{
-    .container,.personal{
-        width: 30%;
-    }
     app-menu{
-        width: 40%;
+        width: 40vw;
+    }
+   
+}
+@media #{$large-desktops}{
+    .personal{
+        margin-left: 0;
     }
 }
 

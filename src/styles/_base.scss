@@ -1,7 +1,7 @@
 @import "./vars";
 @font-face {
-    font-family:'Montserrat', sans-serif;
-    src: ('assets/fonts/Monserrat/Montserrat-ExtraLight.ttf');
+    font-family:'OpenSans', sans-serif;
+    src: ('assets/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
 }
 body{
     width: 100%;
@@ -9,12 +9,12 @@ body{
     margin: 0 auto;
     color: $color-secundary;
     background-color: $color-primary;
-    font-family:'Montserrat', sans-serif;
+    font-family:'OpenSans', sans-serif;
     font-size: 90%;
     letter-spacing: $letter-spacing;
     word-spacing: $word-spacing; 
     line-height:$line-height;
-    
+    border: .001rem solid $color-secundary;
 }
 *{
     box-sizing: border-box;
@@ -98,12 +98,16 @@ li{
         font-size: 1.2rem;
     }
     h1{
-        font-size: $font-h1;
+       /*  font-size: $font-h1*1.2; */
+        line-height: 1.2;
     }
 }
 @media #{$desktops}{
     html, body{
         font-size: 1.3rem;
+    }
+    h1{
+        /* font-size: $font-h1*1.4; */
     }
 }
 @media #{$large-desktops}{
