@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-bottom: 4rem;
     &::after{
         content: "";        
         height: 100%;
@@ -22,6 +23,7 @@
     margin: 0;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     display: flex;
     position: relative;
 }
@@ -30,9 +32,6 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-    >*{
-        margin-bottom: 3rem;
-    }
 }
 .nombre,h1{
     margin: 0;
@@ -45,7 +44,6 @@
 app-menu{
     position: absolute;
     z-index: 1000;
-    width: 95vw;
     height: auto;
     background-color: $color-secundary;
 }
@@ -60,6 +58,11 @@ app-menu{
     &:hover{
         cursor: pointer;
     }
+    &:focus{        
+        box-shadow: 0 0 .2rem 0 $color-secundary;
+    }
+    width: 2rem;
+    height: 2rem;
 }
 .container{
     display: flex;
@@ -70,11 +73,13 @@ app-menu{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4rem;
 }
 
 .img{
     width: 100%;
-    border: .1rem solid $gray;
+    border: 0;
+    border-radius: 1rem;
 }
 .personal{
     position: relative;
@@ -90,34 +95,38 @@ app-menu{
         position: absolute;
         top: -1.5rem;
         left: -1.5rem;
-        z-index: -1;
+        z-index: -1;        
+        border-radius: 1rem;
     }
 }
 .contact{
     display: none;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing*1.2;
+    position: relative;
+    right: -1rem;
 }
 app-social-media{
    display: none;
 }
 @media #{$tablets}{
     .data{
+        margin-top: 4rem;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        width: 80%;
         margin-left: auto;
-        padding-top: 2.5rem;        
+        padding-left: 1rem;
+        align-self: flex-start;    
     }
     .header{
         flex-direction: row;
         background: linear-gradient(90deg, rgba(255,255,255,0) 48%, $color-lines 48%, $color-lines 48.5%, rgba(255,255,255,0) 48.5%);
-        background-size: 20%;
+        background-size: 15%;
         background-origin: margin-box;
     }
     .personal{
         width: 35%;
-        margin-top: 4rem;
-        position: relative;
-        top: -3rem;
     }
     
     .container{
@@ -125,12 +134,24 @@ app-social-media{
         padding: 0;
         margin-left: 0;
     }
-    .contact{
-        width: 20%;
+    .contact{   
+       display: inline-block;     
+       transform: rotate(90deg);
+       color:$color-secundary;
+       padding: 0 0.5rem;
+       &:focus{        
+        box-shadow: 0 0 .2rem 0 $color-secundary;
+        }           
+        &:hover{
+            color:$color-h2Number;
+        }
+        &:active{
+            &:focus{
+                box-shadow: none;
+            }
+        }
     }
     .containerMenu{
-        position: absolute;
-        top: 0;
         height: 27rem;
         width: 4rem;
         background: linear-gradient(to bottom, rgba(28,28,28,0.17130602240896353) 0%, rgba(0,0,0,0) 100%);
@@ -141,11 +162,16 @@ app-social-media{
     app-social-media{
         display: flex;
         transform: rotate(90deg);
+        position: relative;
+        top: 6rem;      
     }
 }
 @media #{$desktops}{
+    .data{
+        padding-left: 4rem;
+    }
     app-menu{
-        width: 40vw;
+        /* width: 40vw; */
     }
    
 }

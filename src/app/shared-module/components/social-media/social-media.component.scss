@@ -14,7 +14,16 @@
 .social__a{
     color:$color-secundary;
     padding: 0 .5rem;    
+    letter-spacing: $letter-spacing*1.2;
     &:focus{        
         box-shadow: 0 0 .2rem 0 $color-secundary;
+    }    
+    &:hover{
+        color:$color-h2Number;
+    }
+    &:active{
+        &:focus{
+            box-shadow: none;
+        }
     }
 }
