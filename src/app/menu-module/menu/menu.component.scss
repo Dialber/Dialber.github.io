@@ -28,12 +28,6 @@
     }
 
 }
-.menu__li{
-    padding-left: 1rem;
-    &:hover{
-        background-color: $color-primary;
-    }
-}
 .link{
     display: inline-block;
     width: 100%;
@@ -44,9 +38,10 @@
     line-height: 2;
     &:hover{        
         color: $color-secundary;
+        background-color: $color-primary;
     }
     &::before{
-        margin-right: 1.5rem;
+        margin: 0 1.5rem;
     }
 }
 .hide{
