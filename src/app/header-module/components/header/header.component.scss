@@ -6,6 +6,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-bottom: 4rem;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 48%, $color-lines 48%, $color-lines 48.5%, rgba(255,255,255,0) 48.5%);
+    background-size: 50%;
     &::after{
         content: "";        
         height: 100%;
@@ -120,10 +122,8 @@ app-social-media{
         align-self: flex-start;    
     }
     .header{
-        flex-direction: row;
-        background: linear-gradient(90deg, rgba(255,255,255,0) 48%, $color-lines 48%, $color-lines 48.5%, rgba(255,255,255,0) 48.5%);
-        background-size: 15%;
-        background-origin: margin-box;
+        flex-direction: row;        
+        background-size: 20%;
     }
     .personal{
         width: 35%;
