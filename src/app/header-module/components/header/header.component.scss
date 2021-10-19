@@ -83,7 +83,7 @@ app-menu{
 }
 .personal{
     position: relative;
-    width: 18rem;
+    width: 16rem;
     margin-left: auto;
     margin-right: auto;
     &::after{
@@ -93,8 +93,8 @@ app-menu{
         background-color: transparent;
         border: .1rem solid $color-secundary;
         position: absolute;
-        top: -1.5rem;
-        left: -1.5rem;
+        top: 1.2rem;
+        left: -2rem;
         z-index: -1;        
         border-radius: 1rem;
     }
@@ -127,6 +127,8 @@ app-social-media{
     }
     .personal{
         width: 35%;
+        position: relative;
+        transform: translateX(1rem);
     }
     
     .container{
