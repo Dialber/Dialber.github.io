@@ -1,0 +1,26 @@
+@import"../../../../styles/vars";
+:host{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.wraper{
+    display: flex;
+    position: relative;
+}
+.title{
+    text-transform: uppercase;
+    flex: 1 1;
+    font-size: $font-h4;
+    color: $color-text-know;
+}
+.text{
+    color:$color-text-know2;
+}
+.number{
+    color:$color-h2Number;
+    font-size: $font-h4;
+    position: absolute;
+    top: 0;
+    left: -2.3rem;
+}

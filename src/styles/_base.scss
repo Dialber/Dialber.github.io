@@ -40,7 +40,10 @@ h2,h3{
 h3{
     font-size: $font-h3;
 }
-    
+h4{
+    font: $font-h4;
+    margin: 0;
+}    
 h2{
     font-size: $font-h2;
     color: $color-h2Number;
@@ -90,6 +93,10 @@ textarea{
     
     line-height:$line-height;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
 li{
     list-style: none;
 }
@@ -111,9 +118,6 @@ li{
 @media #{$desktops}{
     html, body{
         font-size: 1.3rem;
-    }
-    h1{
-        /* font-size: $font-h1*1.4; */
     }
 }
 @media #{$large-desktops}{

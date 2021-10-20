@@ -5,11 +5,14 @@ $beige:#a99561;
 $gray:#a7a7a7;
 $gray2:#373737;
 $gray3:#a1a1a1;
+$gray4:#767676;
 
 $color-primary:$black;//color más usado
 $color-secundary:$white;
 $color-h2Number:$beige;
 $color-text:$gray;
+$color-text-know:$gray3;
+$color-text-know2:$gray4;
 $color-lines:$gray2;
 
 $phones:"(min-width:24rem)";
@@ -24,6 +27,7 @@ $four-k:"(min-width:160rem)";//4k...1760px and up
 $font-h1:3rem;
 $font-h2:3rem;
 $font-h3:2.46rem;
+$font-h4:1.3rem;
 $font-dataHeader:1.5rem;
 $font-p:1.1rem;
 $font-a:.8rem;

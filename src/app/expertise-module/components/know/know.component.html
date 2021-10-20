@@ -1,3 +1,8 @@
 <div class="container">
-    <app-article-title [number]="number" [title]="title"></app-article-title>
+    <div class="title">
+        <app-article-title [number]="number" [title]="title" [change]="change"></app-article-title>
+    </div>
+    <ul class="knows">
+        <li *ngFor="let item of list;let indice = index" class="knows__element"><app-element [title]=item.title [value]=item.value [number]=Value(indice)></app-element></li>
+    </ul>
 </div>
