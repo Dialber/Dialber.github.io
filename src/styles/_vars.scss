@@ -4,6 +4,7 @@ $white:#ffffff;
 $beige:#a99561;
 $gray:#a7a7a7;
 $gray2:#373737;
+$gray3:#a1a1a1;
 
 $color-primary:$black;//color más usado
 $color-secundary:$white;
@@ -20,13 +21,15 @@ $extra-large-desktops:"(min-width:110rem)";// 1760px and up)
 $four-k:"(min-width:160rem)";//4k...1760px and up
 
 /*tamaños base*/
-$font-h1:2rem;
-$font-h2:1.7rem;
-$font-p:1.40rem;
+$font-h1:3rem;
+$font-h2:3rem;
+$font-h3:2.46rem;
+$font-dataHeader:1.5rem;
+$font-p:1.1rem;
 $font-a:.8rem;
 $font-span:2.98rem;
 $font-btn:1.5rem;
-$line-height:1.5rem;
+$line-height:1.5;
 $letter-spacing:0.05rem;
 $word-spacing: 0.1rem; 
 

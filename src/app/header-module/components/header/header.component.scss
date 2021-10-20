@@ -1,4 +1,6 @@
 @import "../../../../styles/vars";
+@import "../../../../styles/_mixins";
+
 .header{
     position: relative;
     display: flex;
@@ -6,6 +8,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-bottom: 4rem;
+    margin-bottom: 4rem;
     background: linear-gradient(90deg, rgba(255,255,255,0) 48%, $color-lines 48%, $color-lines 48.5%, rgba(255,255,255,0) 48.5%);
     background-size: 50%;
     &::after{
@@ -156,7 +159,7 @@ app-social-media{
     .containerMenu{
         height: 27rem;
         width: 4rem;
-        background: linear-gradient(to bottom, rgba(28,28,28,0.17130602240896353) 0%, rgba(0,0,0,0) 100%);
+        @include gradient(to bottom);
         .menu{
             margin-left: 0;
         }

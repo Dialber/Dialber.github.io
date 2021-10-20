@@ -1,6 +1,6 @@
 @import "./vars";
 @font-face {
-    font-family:'OpenSans', sans-serif;
+    font-family:'Open Sans', sans-serif;
     src: ('assets/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
 }
 body{
@@ -10,7 +10,7 @@ body{
     color: $color-secundary;
     background-color: $color-primary;
     font-family:'OpenSans', sans-serif;
-    font-size: 90%;
+    font-size: 85%;
     letter-spacing: $letter-spacing;
     word-spacing: $word-spacing; 
     line-height:$line-height;
@@ -28,16 +28,22 @@ html, body{
 h1{
     font-size: $font-h1;
     font-weight: 300;
-    line-height: 2.5rem;
+    line-height: 1.2;
     text-align: left;
+    padding-right: 2rem;
 }
 h2,h3{    
     line-height:1.2;
     font-weight: 100;
+    margin: 0 0 .2rem 0;
+}
+h3{
+    font-size: $font-h3;
 }
     
 h2{
     font-size: $font-h2;
+    color: $color-h2Number;
 }
 img,video{
     max-width: 100%;
@@ -123,6 +129,6 @@ li{
 
 @media #{$four-k}{
     html, body{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
