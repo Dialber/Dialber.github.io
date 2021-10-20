@@ -1,0 +1,12 @@
+@import"../../../../styles/_vars";
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container__h2{
+    color: $color-h2Number;
+}
+.container__h3{
+    color: $color-secundary;
+}
