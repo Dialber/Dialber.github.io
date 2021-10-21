@@ -1,0 +1,36 @@
+@import"../../../../styles/vars";
+@import"../../../../styles/mixins";
+.container{
+    @include gradient(-45deg);
+   display: flex;
+   flex-direction: column;
+   >*{
+       margin-bottom: 3rem;
+   }
+}
+.list{
+    display: flex;
+    flex-flow: column wrap;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list__item{
+    margin-bottom: 1rem;
+}
+@media #{$landscape-phones}{
+    
+}
+@media #{$tablets}{
+    .list{
+        width: 80%;
+        flex-direction: row;
+    }
+    .list__item{
+        width: 45%;
+        justify-content: space-between;
+    }
+}
+@media #{$large-desktops}{
+    
+}

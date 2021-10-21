@@ -24,6 +24,16 @@
     background-color: transparent;
     color: $color-secundary;
     cursor: pointer;
+    &:hover{
+        color: $color-primary;
+        background-color: $color-secundary;
+    }
+    &:active{
+        transform: scale(.9);
+    }
+    &:focus{
+        box-shadow: 0 0 0 .3rem $color-secundary;
+    }
 }
 @media #{$tablets}{
     .container{

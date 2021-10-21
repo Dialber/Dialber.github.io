@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ExpertiseModule } from './expertise-module/expertise.module';
 import { HeaderModule } from './header-module/header-module.module';
 import { MenuModule } from './menu-module/menu-module.module';
+import { SkillsModuleModule } from './skills-module/skills-module.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MenuModule } from './menu-module/menu-module.module';
     HeaderModule,
     AboutModuleModule,
     MenuModule,
-    ExpertiseModule
+    ExpertiseModule,
+    SkillsModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,6 @@
+<div class="container">
+    <app-article-title [number]="number" [title]="title" [change]="change"></app-article-title>
+    <ul class="list">
+        <li *ngFor="let item of list" class="list__item"><app-element-skill [title]=item.title [value]=item.value></app-element-skill></li>
+    </ul>
+</div>
