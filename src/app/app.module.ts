@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ExpertiseModule } from './expertise-module/expertise.module';
 import { HeaderModule } from './header-module/header-module.module';
 import { MenuModule } from './menu-module/menu-module.module';
+import { ProjectsModuleModule } from './projects-module/projects-module.module';
 import { SkillsModuleModule } from './skills-module/skills-module.module';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SkillsModuleModule } from './skills-module/skills-module.module';
     AboutModuleModule,
     MenuModule,
     ExpertiseModule,
-    SkillsModuleModule
+    SkillsModuleModule,
+    ProjectsModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

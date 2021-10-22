@@ -1,0 +1,41 @@
+@import"./../../../../styles/vars";
+.container{
+    display: flex;
+    flex-direction: column;
+    >*{
+        margin-bottom: 4rem;
+    }
+}
+.listProjects{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+.listProjects__item{
+    width: 100%;
+    border: 1px solid white;
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+@media #{$landscape-phones}{
+    .listProjects{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .listProjects__item{
+        width: 40%;
+    }
+}
+@media #{$tablets}{
+    .listProjects__item{
+        width: 30%;
+    }
+}
+@media #{$large-desktops}{
+    .listProjects__item{
+        width: 25%;
+    }
+}
