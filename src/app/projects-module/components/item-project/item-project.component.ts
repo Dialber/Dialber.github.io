@@ -11,6 +11,8 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
   @Input()number:string="";
   @Input()imgDir:string="";  
 
+  slider:boolean=false;
+  changeColor:boolean=false;
   @ViewChild('container')container!:ElementRef;
   @ViewChildren('github')githubList!:QueryList<ElementRef>;
 
@@ -29,17 +31,18 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
   /*changeColorGithub()---> En este método modifico el color de los iconos de github y nube,cuando hago 
   el hover en en elemento wraper*/
   changeColorGithub(event:any):void{
-    for (let index = 0; index < this.githubList.length; index++) {
-      
+    /* for (let index = 0; index < this.githubList.length; index++) {      
       this.render.setStyle(this.githubList.get(index)?.nativeElement,"color","black")
-    }
-    
+    } */
+    this.slider=true;
+    this.changeColor=true;
   }
   RestoreColorGithub(event:any):void{
-    for (let index = 0; index < this.githubList.length; index++) {
-      
+    /* for (let index = 0; index < this.githubList.length; index++) {
       this.render.setStyle(this.githubList.get(index)?.nativeElement,"color","white")
-    }
-    
+    } */
+    this.slider=false;  
+    this.changeColor=false;
+
   }
 }

@@ -14,6 +14,10 @@
 }
 .container{
     background-size: 100%;
+    overflow-y: hidden;
+}
+.move{
+    animation: MoveImg 5s linear alternate 2;
 }
 .more{
     align-self: flex-end;
@@ -37,6 +41,7 @@
     font-weight: 900;
 }
 .github{
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -45,4 +50,17 @@
 .github__element{
     font-size: 2rem;
     margin-right: 1rem;
+    &:first-of-type{
+        margin-right: auto;
+    }
+}
+.github__el{
+    &:first-of-type{
+        margin-right: auto;
+    }
+   margin-right: .4rem;
+}
+.setColor{
+    color: $color-primary;
+    text-shadow: .1rem .1rem .3rem .3rem $color-primary;
 }

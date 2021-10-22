@@ -1,12 +1,13 @@
-<div class="container" #container>
+<div class="container" #container [ngClass]="{move: slider}">
     <div class="wraper" (mouseover)="changeColorGithub($event)" (mouseout)="RestoreColorGithub($event)">
         <div class="header">
-            <span class="number">{{number}}</span>
-            <h4 class="title">{{title}}</h4>
+            <span class="number" [ngClass]="{setColor: changeColor}">{{number}}</span>
+            <h4 class="title" [ngClass]="{setColor: changeColor}">{{title}}</h4>
         </div>    
         <ul class="github">
-            <li><a href="#"class="bi bi-github github__element" #github></a></li>
-            <li><a href="#"class="bi bi-cloud github__element" #github></a></li>
+            <li class="github__el"><a href="#"class="bi bi-info-circle github__element" [ngClass]="{setColor: changeColor}"></a></li>
+            <li class="github__el"><a href="#"class="bi bi-github github__element" [ngClass]="{setColor: changeColor}"></a></li>
+            <li class="github__el"><a href="#"class="bi bi-cloud github__element" [ngClass]="{setColor: changeColor}"></a></li>
         </ul>
     </div>    
 </div>
