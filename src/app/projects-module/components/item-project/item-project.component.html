@@ -1,13 +1,20 @@
 <div class="container" #container [ngClass]="{move: slider}">
-    <div class="wraper" (mouseover)="changeColorGithub($event)" (mouseout)="RestoreColorGithub($event)">
+    <div class="wraper" (mouseenter)="changeColorGithub()" (mouseleave)="RestoreColorGithub()">
         <div class="header">
             <span class="number" [ngClass]="{setColor: changeColor}">{{number}}</span>
             <h4 class="title" [ngClass]="{setColor: changeColor}">{{title}}</h4>
         </div>    
+        
         <ul class="github">
-            <li class="github__el"><a href="#"class="bi bi-info-circle github__element" [ngClass]="{setColor: changeColor}"></a></li>
+            <li class="github__el"><div role="button" class="bi bi-info-circle github__element" [ngClass]="{setColor: changeColor}" (mouseover)="showDescription()" (mouseout)="hideDescription()" (click)="showhide()" #info></div></li>
             <li class="github__el"><a href="#"class="bi bi-github github__element" [ngClass]="{setColor: changeColor}"></a></li>
             <li class="github__el"><a href="#"class="bi bi-cloud github__element" [ngClass]="{setColor: changeColor}"></a></li>
         </ul>
-    </div>    
+    </div>
+    <div class="description" [ngClass]="{moveDown: moveDescription}" #descript>
+        <p>{{description}}</p>
+        <ul class="listTecnol">
+            <li *ngFor="let item of listTecnol" class="listTecnol__item">{{item}}</li>
+        </ul>
+    </div>  
 </div>

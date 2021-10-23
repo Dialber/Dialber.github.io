@@ -15,6 +15,7 @@
 .container{
     background-size: 100%;
     overflow-y: hidden;
+    position: relative;
 }
 .move{
     animation: MoveImg 5s linear alternate 2;
@@ -51,16 +52,57 @@
     font-size: 2rem;
     margin-right: 1rem;
     &:first-of-type{
-        margin-right: auto;
+        margin-right: auto;        
     }
 }
+.bi-info-circle{
+    &:hover{
+        color:white
+    }
+}
+
 .github__el{
     &:first-of-type{
         margin-right: auto;
+        position: relative;
+        z-index: 50;
     }
    margin-right: .4rem;
 }
 .setColor{
     color: $color-primary;
-    text-shadow: .1rem .1rem .3rem .3rem $color-primary;
+}
+.description{
+    text-align: left;
+    position: absolute;
+    z-index: 40;
+    padding: .5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateY(-100%);
+    transition: transform 1s ease;
+    >*{
+        font-size: .9rem;
+    }
+}
+.moveDown{
+    transform: translateY(0);
+    animation-play-state: running;
+}
+.listTecnol{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+.listTecnol__item{
+    list-style: circle;
+}
+.pauseAnimation{
+    animation-play-state: paused;
 }

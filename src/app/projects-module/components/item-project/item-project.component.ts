@@ -9,13 +9,17 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
 
   @Input()title:string="";
   @Input()number:string="";
-  @Input()imgDir:string="";  
+  @Input()imgDir:string="";
+  @Input()description:string="";
+  @Input()listTecnol:string[]=[];
+
 
   slider:boolean=false;
   changeColor:boolean=false;
-  @ViewChild('container')container!:ElementRef;
-  @ViewChildren('github')githubList!:QueryList<ElementRef>;
+  moveDescription:boolean=false;
 
+  @ViewChild('container')container!:ElementRef;
+  @ViewChild('descript')descriptionElement!:ElementRef;
 
   constructor( private render:Renderer2) { }
   
@@ -30,19 +34,36 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
   }
   /*changeColorGithub()---> En este método modifico el color de los iconos de github y nube,cuando hago 
   el hover en en elemento wraper*/
-  changeColorGithub(event:any):void{
-    /* for (let index = 0; index < this.githubList.length; index++) {      
-      this.render.setStyle(this.githubList.get(index)?.nativeElement,"color","black")
-    } */
+  changeColorGithub():void{
     this.slider=true;
     this.changeColor=true;
   }
-  RestoreColorGithub(event:any):void{
-    /* for (let index = 0; index < this.githubList.length; index++) {
-      this.render.setStyle(this.githubList.get(index)?.nativeElement,"color","white")
-    } */
+  RestoreColorGithub():void{
     this.slider=false;  
     this.changeColor=false;
 
+  }
+  /**Mostrar y ocultar la descripción cuando el mouse está sobre el ícono de info */
+  showDescription():void{
+    this.moveDescription=true;    
+    this.render.addClass(this.container.nativeElement,"pauseAnimation");
+  }
+  hideDescription():void{
+    this.moveDescription=false;
+    this.render.removeClass(this.container.nativeElement,"pauseAnimation");   
+  }
+  /**Mostrar y ocultar la información al hacer click en el ícono */
+  showhide():void{
+    if(this.moveDescription==true){
+      /* this.render.removeClass(this.descriptionElement.nativeElement,"moveDown");
+      this.moveDescription=false; */
+      this.hideDescription();
+    }
+    else{
+     /*  this.render.addClass(this.descriptionElement.nativeElement,"moveDown");
+      this.moveDescription=true; */
+      this.showDescription();
+
+    }
   }
 }

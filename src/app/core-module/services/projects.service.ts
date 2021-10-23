@@ -11,12 +11,12 @@ export class ProjectsService {
       {
         title:"Portafolio",img:"assets/img/projects/Restaurant.jpg",
         description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni adipisci magnam ex dolores quod vel voluptatibus nisi, vero optio?",
-        array:["Angular,BoostrapIcons,Scss,FontAwesome"]
+        array:["Angular","BoostrapIcons","Scss","FontAwesome"]
       },
       {
         title:"Restaurante",img:"assets/img/projects/Restaurant.jpg",
         description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni adipisci magnam ex dolores quod vel voluptatibus nisi, vero optio?",
-        array:["Javascript,Html,Scss,FontAwesome"]
+        array:["Javascript","Html","Scss","FontAwesome"]
       },
       {
         title:"Marvel vs DC",img:"assets/img/projects/marvel-vs-dc.jpg",
