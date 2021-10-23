@@ -34,6 +34,26 @@
     align-items: flex-start;
     font-size: $font-size-header-project;
 }
+.closee{
+    padding: 0;
+    border: 0;
+    align-self: flex-end;
+    background-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+input[type=button]{
+    color: white;
+}
 .title,.number{
     text-align: left;
 }
@@ -51,6 +71,7 @@
 .github__element{
     font-size: 2rem;
     margin-right: 1rem;
+    cursor: pointer;
     &:first-of-type{
         margin-right: auto;        
     }

@@ -20,6 +20,7 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
 
   @ViewChild('container')container!:ElementRef;
   @ViewChild('descript')descriptionElement!:ElementRef;
+  @ViewChild('info')infoElement!:ElementRef;
 
   constructor( private render:Renderer2) { }
   
@@ -41,29 +42,25 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
   RestoreColorGithub():void{
     this.slider=false;  
     this.changeColor=false;
-
   }
   /**Mostrar y ocultar la descripción cuando el mouse está sobre el ícono de info */
   showDescription():void{
-    this.moveDescription=true;    
+    this.moveDescription=true;
     this.render.addClass(this.container.nativeElement,"pauseAnimation");
+    this.render.addClass(this.infoElement.nativeElement,"bi-x-circle");
   }
   hideDescription():void{
     this.moveDescription=false;
     this.render.removeClass(this.container.nativeElement,"pauseAnimation");   
+    this.render.removeClass(this.infoElement.nativeElement,"bi-x-circle");   
   }
   /**Mostrar y ocultar la información al hacer click en el ícono */
   showhide():void{
     if(this.moveDescription==true){
-      /* this.render.removeClass(this.descriptionElement.nativeElement,"moveDown");
-      this.moveDescription=false; */
       this.hideDescription();
     }
     else{
-     /*  this.render.addClass(this.descriptionElement.nativeElement,"moveDown");
-      this.moveDescription=true; */
       this.showDescription();
-
     }
   }
 }
