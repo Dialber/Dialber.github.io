@@ -1,0 +1,10 @@
+@import"../../../../styles/vars";
+:host{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+.text{
+    text-transform: capitalize;
+    font-size: $font-inputText;
+}

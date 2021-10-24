@@ -2,6 +2,7 @@
 $black:#000000;
 $white:#ffffff;
 $beige:#a99561;
+$beige-2:#a99561;
 $gray:#a7a7a7;
 $gray2:#373737;
 $gray3:#a1a1a1;
@@ -14,6 +15,7 @@ $color-text:$gray;
 $color-text-know:$gray3;
 $color-text-know2:$gray4;
 $color-lines:$gray2;
+$color-buttomSend:$beige-2;
 
 $phones:"(min-width:24rem)";
 $landscape-phones:"(min-width:36rem)";// Small devices (landscape phones, 576px and up)
@@ -26,7 +28,7 @@ $four-k:"(min-width:160rem)";//4k...1760px and up
 /*tamaños base*/
 $font-size-header-project:1.2rem;
 
-$font-h1:3rem;
+$font-h1:2.3rem;
 $font-h2:3rem;
 $font-h3:2.46rem;
 $font-h4:1.3rem;
@@ -35,6 +37,7 @@ $font-p:1.1rem;
 $font-a:.8rem;
 $font-span:1rem;
 $font-btn:1.5rem;
+$font-inputText:.8rem;
 $line-height:1.5;
 $letter-spacing:0.05rem;
 $word-spacing: 0.1rem; 

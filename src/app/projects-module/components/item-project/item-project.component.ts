@@ -49,6 +49,13 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
     this.render.addClass(this.container.nativeElement,"pauseAnimation");
     this.render.addClass(this.infoElement.nativeElement,"bi-x-circle");
   }
+  pause():void{
+    this.render.addClass(this.container.nativeElement,"pauseAnimation");
+  }
+  notPause():void{
+    this.render.removeClass(this.container.nativeElement,"pauseAnimation");
+  }
+  
   hideDescription():void{
     this.moveDescription=false;
     this.render.removeClass(this.container.nativeElement,"pauseAnimation");   

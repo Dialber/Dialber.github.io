@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ElementForm } from '../../models/element-form';
 
 @Component({
   selector: 'app-form',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  list:ElementForm[]=[];
+
+  constructor() {
+    this.list=[{name:"nombre",type:"text"},{name:"correo",type:"text"},{name:"asunto",type:"text"}];
+  }
 
   ngOnInit(): void {
   }

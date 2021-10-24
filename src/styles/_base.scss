@@ -62,12 +62,13 @@ a{
     color:$color-secundary;
 }
 button{
-    font-size: $font-btn;
-    font-family: "Ubuntu",sans-serif;
+   border: 0;
+   padding: 0;
 }
 textarea{
     box-sizing: border-box;
     font: inherit;
+    font:$font-inputText;
 }
 label{
     text-align: left;
@@ -86,8 +87,7 @@ button,
 input,
 optgroup,
 select,
-textarea{
-    
+textarea{    
     line-height:$line-height;
 }
 ul{
@@ -96,6 +96,15 @@ ul{
 }
 li{
     list-style: none;
+}
+[type="text"]{
+    background-color: transparent;
+    padding-top: .5rem;
+    color: $color-secundary;
+    border: 0;
+    border-bottom: .05rem solid $color-text;
+    font-weight: 200;
+    font:$font-inputText;
 }
 
 @media #{$landscape-phones}{

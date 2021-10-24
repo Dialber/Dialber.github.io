@@ -29,10 +29,7 @@
         background-color: $color-secundary;
     }
     &:active{
-        transform: scale(.9);
-    }
-    &:focus{
-        box-shadow: 0 0 0 .3rem $color-secundary;
+        transform: scale(.98);
     }
 }
 @media #{$tablets}{

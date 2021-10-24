@@ -1,0 +1,65 @@
+@import"../../../../styles/vars";
+@import"../../../../styles/mixins";
+:host{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include gradient(to right);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    >*{
+        margin-bottom: 1rem;
+    }
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+.labelMessage{
+    margin-bottom: 2rem;    
+    font-size: .8rem;
+}
+.TextArea{
+    min-width: 100%;
+    max-width: 100%;
+    resize: none;
+    padding: .8rem;
+}
+.send{
+    margin-left: auto;
+    padding: .5rem 2rem;
+    background-color: $color-buttomSend;
+    color:$color-secundary;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+    letter-spacing: $letter-spacing*1.2;
+    border: 0;
+}
+@media #{$tablets}{
+    :host{
+        padding: 10%;
+    }
+    .form{
+        justify-content: space-between;
+        width: 100%;   
+        flex-flow: row wrap; 
+    }
+    app-file{
+        width: 100%;  
+        justify-content: space-between;        
+        &:first-of-type{
+            width: 45%;
+        }
+        &:nth-child(2){
+            width: 45%;
+        } 
+    }
+}

@@ -2,9 +2,9 @@
 .container{
     display: flex;
     flex-direction: column;
-    >*{
-        margin-bottom: 4rem;
-    }
+}
+app-article-title{
+    margin-bottom: 4rem;
 }
 .listProjects{
     display: flex;

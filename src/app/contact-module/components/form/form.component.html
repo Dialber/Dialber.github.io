@@ -1,6 +1,8 @@
-<header>
-    <h2>Contáctame...</h2>
-</header>
-<!-- <form (ngSubmit)="onSubmit()" #form="ngForm">
-
-</form> -->
+<form class="form">
+   <app-file *ngFor="let item of list" [text]=item.name [type]=item.type></app-file>
+   <div class="message">
+        <label for="id_textArea" class="labelMessage">Mensaje</label>
+       <textarea name="" id="id_textArea" cols="30" rows="4" class="TextArea"></textarea>
+   </div>
+   <input type="button" value="Enviar" class="send">
+</form>
