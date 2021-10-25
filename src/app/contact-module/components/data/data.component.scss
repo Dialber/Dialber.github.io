@@ -1,0 +1,54 @@
+    @import"../../../../styles/vars";  
+    @import"../../../../styles/mixins";
+    app-data{
+        width: 100%;
+        height: 100%;
+        display: block;
+        box-sizing: border-box;
+       *{
+        box-sizing: border-box;
+       }
+    }
+    app-data > div.container{
+        &:first-of-type{
+            height: 100%;
+            width: 100%;        
+            @include gradient (175deg);  
+        }
+        }
+    app-data > .container{
+        
+        .ulData{          
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }     
+       
+        .ulData__li{
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 1.5rem;
+            align-items: left;
+            flex: 0;
+        }
+        .ulData__title,.ulData__value{
+            font-size: $font-inputText;
+        }
+    }
+    @media #{$tablets}{
+        
+        app-data > .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+            
+            .ulData{
+                padding: 5rem 0;
+            }
+            .ulData__li{
+                margin: 0;
+            }
+        }
+       
+    }

@@ -5,7 +5,7 @@
             <h4 class="title" [ngClass]="{setColor: changeColor}">{{title}}</h4>
         </div> 
         <ul class="github">
-            <li class="github__el hint--top-right" data-hint="Detalles"><div role="button" class="bi bi-info-circle github__element" [ngClass]="{setColor: changeColor}" (click)="showhide()" #info></div></li>
+            <li class="github__el hint--top-right" data-hint="Detalles"><button class="bi bi-info-circle github__element" [ngClass]="{setColor: changeColor}" (click)="showhide()" #info></button></li>
             <li class="github__el hint--top-left" data-hint="GitHub"><a href="#"class="bi bi-github github__element" [ngClass]="{setColor: changeColor}"></a></li>
             <li class="github__el hint--top-left" data-hint="Despliegue"><a href="#"class="bi bi-cloud github__element" [ngClass]="{setColor: changeColor}"></a></li>
         </ul>

@@ -4,8 +4,7 @@ import { Data } from '../../models/data';
 @Component({
   selector: 'app-data',
   templateUrl: './data.component.html',
-  styleUrls: ['./data.component.scss'],
-  encapsulation:ViewEncapsulation.ShadowDom
+  styleUrls: ['./data.component.scss']  
 })
 export class DataComponent implements OnInit {
 

@@ -1,10 +1,10 @@
 @import"../../../../styles/vars";
 @import"../../../../styles/mixins";
 .container{
-    @include gradient(-45deg);
+   @include gradient(-45deg);
    display: flex;
    flex-direction: column;
-   >*{
+   >*:not(.container__parraf){
        margin-bottom: 3rem;
    }
 }
@@ -18,19 +18,37 @@
 .list__item{
     margin-bottom: 1rem;
 }
+.container__parraf{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
 @media #{$landscape-phones}{
     
 }
 @media #{$tablets}{
-    .list{
+    .container__parraf{
         width: 80%;
-        flex-direction: row;
+    }
+    .list{
+        width: 60%;
+    }
+    
+}
+
+@media #{$desktops}{
+    
+}
+@media #{$large-desktops}{
+    .list{
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        width: 80%;
     }
     .list__item{
         width: 45%;
         justify-content: space-between;
     }
-}
-@media #{$large-desktops}{
-    
 }

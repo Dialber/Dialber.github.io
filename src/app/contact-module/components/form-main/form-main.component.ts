@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-form-main',
@@ -11,7 +11,7 @@ export class FormMainComponent implements OnInit {
   title:string="Contáctame";
   number:string="04";
   change:boolean=true;
-  
+
   constructor() { }
 
   ngOnInit(): void {

@@ -63,7 +63,11 @@ a{
 }
 button{
    border: 0;
-   padding: 0;
+   padding: 0;     
+   background-color: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 textarea{
     box-sizing: border-box;
@@ -79,6 +83,8 @@ label{
 }
 :focus{
     outline: 0;
+    box-shadow: 0 0 .2rem 0 $color-secundary;  
+    border: 0;
 }
 [type="submit"]{
     border: 0;
@@ -89,6 +95,7 @@ optgroup,
 select,
 textarea{    
     line-height:$line-height;
+    box-sizing: border-box;
 }
 ul{
     margin: 0;
@@ -103,10 +110,16 @@ li{
     color: $color-secundary;
     border: 0;
     border-bottom: .05rem solid $color-text;
-    font-weight: 200;
-    font:$font-inputText;
+    font-weight: 100;
+    font-size:$font-inputText;
 }
-
+textarea{
+    font-size:  $font-inputText;
+}
+span{
+    color:$color-h2Number;
+    font-size:$font-span;
+}
 @media #{$landscape-phones}{
     html, body{
         font-size: 1rem;
@@ -133,12 +146,12 @@ li{
 }
 @media #{$extra-large-desktops}{
     html, body{
-        font-size: 2.3rem;
+        font-size: 1.5rem;
     }
 }
 
 @media #{$four-k}{
     html, body{
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 }

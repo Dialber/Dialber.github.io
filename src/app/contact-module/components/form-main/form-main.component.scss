@@ -1,8 +1,5 @@
 @import"../../../../styles/vars";
 @import"../../../../styles/mixins";
-:host{
-
-}
 app-article-title{
     display: flex;
     flex-direction: column;
@@ -18,15 +15,22 @@ app-article-title{
 @media #{$tablets}{   
     .container{
        flex-direction: row;
+       >*{
+           margin-bottom: 0;
+       }
     }
     app-form{
-        flex: 1 1;
+       flex: 1 1;
     }
-    app-data {
-        width: 35% ;  
-    }
-    app-data div.container ul.ulData{
-        flex-direction: column;
-        justify-content: space-around;
+    app-datar{
+        align-self: stretch;
+        width: 28.125%; /* 540/1920 */
     }
 }
+@media #{$desktops}{   
+   
+}
+@media #{$desktops}{   
+   
+}
+

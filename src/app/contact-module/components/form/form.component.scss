@@ -1,15 +1,13 @@
 @import"../../../../styles/vars";
 @import"../../../../styles/mixins";
 :host{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     @include gradient(to right);
 }
 .form{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+    padding: 3rem 10%;
     margin-left: auto;
     margin-right: auto;
     >*{
@@ -31,6 +29,7 @@
     max-width: 100%;
     resize: none;
     padding: .8rem;
+    box-sizing: border-box;
 }
 .send{
     margin-left: auto;
@@ -44,22 +43,19 @@
     border: 0;
 }
 @media #{$tablets}{
-    :host{
-        padding: 10%;
-    }
     .form{
         justify-content: space-between;
         width: 100%;   
-        flex-flow: row wrap; 
+        flex-flow: row wrap;
     }
-    app-file{
-        width: 100%;  
-        justify-content: space-between;        
-        &:first-of-type{
-            width: 45%;
+}
+@media #{$desktops}{
+    .form{
+        app-file{
+            &:nth-child(1),&:nth-child(2){
+                width: 45%;
+            }
         }
-        &:nth-child(2){
-            width: 45%;
-        } 
     }
+    
 }
