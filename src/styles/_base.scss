@@ -60,6 +60,9 @@ a{
     text-decoration: none;
     font-size: $font-a;
     color:$color-secundary;
+    &:visited{
+        color: $color-h2Number;
+    }
 }
 button{
    border: 0;
@@ -68,6 +71,10 @@ button{
    display: flex;
    justify-content: center;
    align-items: center;
+   color: $color-secundary;
+    &:active{
+        transform: scale(.98);
+    }
 }
 textarea{
     box-sizing: border-box;

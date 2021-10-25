@@ -10,7 +10,7 @@ export class MenuComponent implements OnInit,AfterViewInit {
 
   list:string[];
   constructor(private menuService:MenuService,private render:Renderer2) {
-    this.list=["Inicio","Sobre mi","Conocimientos","Skills","Proyectos","Contactos"]
+    this.list=["Inicio","Sobre mi","Skills","Proyectos","Contactos"]
    }
   ngAfterViewInit(): void {
     this.AddClass();   
@@ -34,9 +34,6 @@ export class MenuComponent implements OnInit,AfterViewInit {
           break;
         case "Sobre mi":
           this.render.addClass(element.nativeElement,"bi-emoji-smile");
-          break;
-        case "Conocimientos":
-          this.render.addClass(element.nativeElement,"bi-lightning");          
           break;
         case "Skills":
           this.render.addClass(element.nativeElement,"bi-pencil"); 

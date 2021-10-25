@@ -61,9 +61,6 @@ app-menu{
     &:hover{
         cursor: pointer;
     }
-    &:focus{        
-        box-shadow: 0 0 .2rem 0 $color-secundary;
-    }
     width: 2rem;
     height: 2rem;
 }
