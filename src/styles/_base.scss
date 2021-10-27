@@ -18,7 +18,8 @@ body{
 }
 *{
     box-sizing: border-box;
-
+    border: 0;
+    outline: 0;
 }
 html, body{
     scroll-behavior: smooth;
@@ -88,10 +89,19 @@ label{
     color:$color-primary;    
     text-transform: capitalize;
 }
+a:focus-visible{
+    outline: 0;
+}
+button:focus-visible,
+[type="button"]:focus-visible,
+[type="reset"]:focus-visible,
+[type="submit"]:focus-visible{
+    outline: 0;
+}
+
 :focus{
     outline: 0;
-    box-shadow: 0 0 .2rem 0 $color-secundary;  
-    border: 0;
+    box-shadow: 0 0 .1rem .1rem red;  
 }
 [type="submit"]{
     border: 0;

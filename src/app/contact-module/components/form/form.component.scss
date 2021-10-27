@@ -33,13 +33,12 @@
     max-width: 100%;
     resize: none;
     padding: .8rem;
-    box-sizing: border-box;
 }
 .send{
     margin-left: auto;
     padding: .5rem 2rem;
     background-color: $color-buttomSend;
-    color:$color-secundary;
+    color:$color-primary;
     text-transform: uppercase;
     font-weight: bold;
     font-size: .8rem;

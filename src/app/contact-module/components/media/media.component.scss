@@ -1,5 +1,25 @@
 @import"../../../../styles/vars";
 @import"/node_modules/bootstrap-icons/font/bootstrap-icons";
+a:focus-visible{
+    outline: 0;
+}
+button:focus-visible,
+[type="button"]:focus-visible,
+[type="reset"]:focus-visible,
+[type="submit"]:focus-visible{
+    outline: 0;
+}
+
+:focus{
+    outline: 0;
+    box-shadow: 0 0 .1rem .1rem $color-secundary;  
+    border: 0;
+}
+app-social-media{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
 app-social-media ul.social{
 	&:first-of-type{
 		display: flex;
@@ -7,14 +27,18 @@ app-social-media ul.social{
 		align-items: center;
 		padding: 2rem 1rem 2rem 10%;
 		.social__a{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			text-decoration: none;	
 			font-size: 0;	
 			padding: 0;
-			margin: 0 .5rem;
 			&::before{
 				display: block;
 				position: relative;
 				font-size: 1.5rem;
+				width: 1.5rem;
 				color: $color-secundary;
 				visibility: visible;
 				&:visited{
@@ -26,7 +50,7 @@ app-social-media ul.social{
 			}
 		}
 		.social__li{
-			margin: 0;
+			margin: 0 .5rem;
 			flex: 0;
 		}
 	}
