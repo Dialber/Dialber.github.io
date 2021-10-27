@@ -101,7 +101,7 @@ button:focus-visible,
 
 :focus{
     outline: 0;
-    box-shadow: 0 0 .1rem .1rem red;  
+    box-shadow: 0 0 .1rem .1rem $color-secundary  
 }
 [type="submit"]{
     border: 0;
