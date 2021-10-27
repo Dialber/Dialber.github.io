@@ -1,4 +1,4 @@
 <div class="container">
-    <span class="title">{{title}}</span>
-    <progress class="progres" [value]="value" max="100"></progress>
+    <label class="title" [for]="title">{{title}}</label>
+    <progress class="progres" [value]="value" max="100" [id]="title"></progress>
 </div>

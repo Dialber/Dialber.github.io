@@ -44,6 +44,9 @@
     &::before{
         margin: 0 1.5rem;
     }
+    &:visited{
+        color:$color-h2Number;
+    }
 }
 .hide{
     transform: translateX(-100%);

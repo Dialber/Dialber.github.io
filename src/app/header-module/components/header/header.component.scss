@@ -105,6 +105,9 @@ app-menu{
     letter-spacing: $letter-spacing*1.2;
     position: relative;
     right: -1rem;
+    &:visited{
+        color:$color-h2Number;
+    }
 }
 app-social-media{
    display: none;

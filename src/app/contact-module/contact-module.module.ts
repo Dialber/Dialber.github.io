@@ -5,21 +5,23 @@ import { ContactRoutingModule } from './contact-module-routing.module';
 import { FormComponent } from './components/form/form.component';
 import { SharedModule } from '../shared-module/shared.module';
 import { FormMainComponent } from './components/form-main/form-main.component';
-import { FileComponent } from './components/file/file.component';
 import { DataComponent } from './components/data/data.component';
+import { MediaComponent } from './components/media/media.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     FormComponent,
     FormMainComponent,
-    FileComponent,
-    DataComponent
+    DataComponent,
+    MediaComponent
   ],
   imports: [
     CommonModule,
     ContactRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   exports: [
     FormMainComponent

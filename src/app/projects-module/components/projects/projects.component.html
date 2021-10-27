@@ -1,7 +1,7 @@
-<div class="container">
+<article class="container">
     <app-article-title [title]="title" [number]="number" [change]="change"></app-article-title>
     <ul class="listProjects">
         <li *ngFor="let item of list;let indice = index" class="listProjects__item"><app-item-project [title]=item.title [number]=ToNumber(indice) [imgDir]=item.img [listTecnol]=item.array [description]=item.description></app-item-project></li>
     </ul>
-</div>
+</article>
 

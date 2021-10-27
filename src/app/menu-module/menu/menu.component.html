@@ -1,5 +1,5 @@
 <nav class="menu ">
-    <button class="close bi bi-x" (click)=hideMenu()></button>
+    <button class="close bi bi-x" (click)=hideMenu() role="menu" aria-label="menu" aria-haspopup="true" value="menu">menu</button>
     <ul class="menu__ul">
       <li *ngFor="let item of list" class="menu__li"><a href='#' class="link bi" #link>{{item}}</a></li>
     </ul>

@@ -1,8 +1,19 @@
 <form class="form">
-   <app-file *ngFor="let item of list" [text]=item.name [type]=item.type></app-file>
-   <div class="message">
-        <label for="id_textArea" class="labelMessage">Mensaje</label>
-       <textarea name="" id="id_textArea" cols="30" rows="4" class="TextArea"></textarea>
+   <div class="form__divContainer">
+      <label for="id-nombre" class="labelMessage">nombre</label>
+      <input type="text" name="" id="id-nombre">
+   </div>
+   <div class="form__divContainer">
+      <label for="id-correo" class="labelMessage">correo</label>
+      <input type="text" name="" id="id-correo">
+   </div>
+   <div class="form__divContainer">
+      <label for="id-asunto" class="labelMessage">asunto</label>
+      <input type="text" name="" id="id-asunto">
+   </div>  
+   <div class="form__divContainer">
+      <label for="id_textArea" class="labelMessage">Mensaje</label>
+      <textarea name="" id="id_textArea" cols="30" rows="4" class="TextArea"></textarea>
    </div>
    <input type="button" value="Enviar" class="send">
 </form>

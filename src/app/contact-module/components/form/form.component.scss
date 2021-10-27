@@ -3,6 +3,9 @@
 :host{
     @include gradient(to right);
 }
+*{
+    box-sizing: border-box;
+}
 .form{
     display: flex;
     flex-direction: column;
@@ -14,7 +17,7 @@
         margin-bottom: 1rem;
     }
 }
-.message{
+.form__divContainer{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -22,7 +25,8 @@
 }
 .labelMessage{
     margin-bottom: 2rem;    
-    font-size: .8rem;
+    font-size: $font-inputText;
+    text-transform: capitalize;
 }
 .TextArea{
     min-width: 100%;
@@ -47,7 +51,13 @@
         justify-content: space-between;
         width: 100%;   
         flex-flow: row wrap;
-    }
+        .form__divContainer{
+
+            &:nth-child(1),&:nth-child(2){
+                width: 45%;
+            }
+        }
+    }    
 }
 @media #{$desktops}{
     .form{
