@@ -1,17 +1,17 @@
 <form novalidate class="form" [formGroup]="myForm!" (ngSubmit)=Senddata($event)>
    <div class="form__divContainer">
-      <label for="id-nombre" class="labelMessage">nombre</label>
-      <input type="text" name="name" id="id-nombre" formControlName="name">
+      <label for="id-nombre" class="labelMessage">nombre (*)</label>
+      <input type="text" name="name" id="id-nombre" formControlName="name" aria-required="true">
       <p class="form__error" *ngIf="getControl('name')">{{getError('name')}}</p>
    </div>
    <div class="form__divContainer">
-      <label for="id-correo" class="labelMessage">correo</label>
-      <input type="text" name="email" id="id-correo" formControlName="email">
+      <label for="id-correo" class="labelMessage">correo (*)</label>
+      <input type="text" name="email" id="id-correo" formControlName="email" aria-required="true">
       <p class="form__error" *ngIf="getControl('email')">{{getError('email')}}</p>
    </div>
    <div class="form__divContainer">
-      <label for="id-asunto" class="labelMessage">asunto</label>
-      <input type="text" name="subject" id="id-asunto" formControlName="subject">
+      <label for="id-asunto" class="labelMessage">asunto (*)</label>
+      <input type="text" name="subject" id="id-asunto" formControlName="subject" aria-required="true">
       <p class="form__error" *ngIf="getControl('subject')">{{getError('subject')}}</p>
    </div>  
    <div class="form__divContainer">
