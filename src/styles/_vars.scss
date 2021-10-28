@@ -7,6 +7,7 @@ $gray:#a7a7a7;
 $gray2:#373737;
 $gray3:#a1a1a1;
 $gray4:#767676;
+$red:rgb(255, 0, 0);
 
 $color-primary:$black;//color más usado
 $color-secundary:$white;
@@ -16,6 +17,7 @@ $color-text-know:$gray3;
 $color-text-know2:$gray4;
 $color-lines:$gray2;
 $color-buttomSend:$beige-2;
+$color-error:$red;
 
 $phones:"(min-width:24rem)";
 $landscape-phones:"(min-width:36rem)";// Small devices (landscape phones, 576px and up)
