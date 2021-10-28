@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, QueryList, ViewChildren,Renderer2, AfterViewInit } from '@angular/core';
+import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { MenuService } from 'src/app/core-module/services/menu.service';
 
 @Component({
@@ -31,18 +32,23 @@ export class MenuComponent implements OnInit,AfterViewInit {
       switch (value) {
         case "Inicio":
           this.render.addClass(element.nativeElement,"bi-house");
+          this.render.setAttribute(element.nativeElement,"href","#id-header");
           break;
         case "Sobre mi":
           this.render.addClass(element.nativeElement,"bi-emoji-smile");
+          this.render.setAttribute(element.nativeElement,"href","#id-aboutme");
           break;
         case "Skills":
           this.render.addClass(element.nativeElement,"bi-pencil"); 
+          this.render.setAttribute(element.nativeElement,"href","#id-skills"); 
           break;
         case "Proyectos":
           this.render.addClass(element.nativeElement,"bi-folder-check");
+          this.render.setAttribute(element.nativeElement,"href","#id-projects");
           break;  
         default:
           this.render.addClass(element.nativeElement,"bi-person");
+          this.render.setAttribute(element.nativeElement,"href","#id-contact");
           break;
       }
     });
