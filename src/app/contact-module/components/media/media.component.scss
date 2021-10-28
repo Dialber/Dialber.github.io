@@ -1,20 +1,7 @@
+@import"normalize.css/normalize";
 @import"../../../../styles/vars";
+@import"../../../../styles.scss";
 @import"/node_modules/bootstrap-icons/font/bootstrap-icons";
-a:focus-visible{
-    outline: 0;
-}
-button:focus-visible,
-[type="button"]:focus-visible,
-[type="reset"]:focus-visible,
-[type="submit"]:focus-visible{
-    outline: 0;
-}
-
-:focus{
-    outline: 0;
-    box-shadow: 0 0 .1rem .1rem $color-secundary;  
-    border: 0;
-}
 app-social-media{
 	display: flex;
 	justify-content: flex-start;

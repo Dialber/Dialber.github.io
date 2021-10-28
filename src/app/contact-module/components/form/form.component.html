@@ -1,22 +1,22 @@
-<form novalidate class="form" [formGroup]="myForm!" (ngSubmit)=Senddata()>
+<form novalidate class="form" [formGroup]="myForm!" (ngSubmit)=Senddata($event)>
    <div class="form__divContainer">
       <label for="id-nombre" class="labelMessage">nombre</label>
-      <input type="text" name="" id="id-nombre" formControlName="name">
+      <input type="text" name="name" id="id-nombre" formControlName="name">
       <p class="form__error" *ngIf="getControl('name')">{{getError('name')}}</p>
    </div>
    <div class="form__divContainer">
       <label for="id-correo" class="labelMessage">correo</label>
-      <input type="text" name="" id="id-correo" formControlName="email" >
+      <input type="text" name="email" id="id-correo" formControlName="email">
       <p class="form__error" *ngIf="getControl('email')">{{getError('email')}}</p>
    </div>
    <div class="form__divContainer">
       <label for="id-asunto" class="labelMessage">asunto</label>
-      <input type="text" name="" id="id-asunto" formControlName="subject">
+      <input type="text" name="subject" id="id-asunto" formControlName="subject">
+      <p class="form__error" *ngIf="getControl('subject')">{{getError('subject')}}</p>
    </div>  
    <div class="form__divContainer">
       <label for="id_textArea" class="labelMessage">Mensaje</label>
-      <textarea name="" id="id_textArea" cols="30" rows="4" class="TextArea" formControlName="message"></textarea>
-      <p class="form__error" *ngIf="getControl('message')">{{getError('message')}}</p>
+      <textarea name="message" id="id_textArea" cols="30" rows="4" class="TextArea" formControlName="message"></textarea>
    </div>
    <input type="submit" value="Enviar" class="send" [disabled]="myForm!.invalid">
 </form>

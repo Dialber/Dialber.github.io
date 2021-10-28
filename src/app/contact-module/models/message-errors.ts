@@ -35,11 +35,11 @@ export const errosRegister:MessageErrors[]=[
         ]
     },
     {
-        formControlName:"message",
+        formControlName:"subject",
         validators:[
             {
                 name:"required",
-                message:"El mensaje es requerido"
+                message:"El asunto es requerido"
             }
         ]
     }
