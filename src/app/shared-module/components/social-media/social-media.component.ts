@@ -14,7 +14,7 @@ export class SocialMediaComponent implements OnInit,AfterViewInit {
   @ViewChildren('media') listSocialMedia!:QueryList<ElementRef>;
 
   constructor(private render:Renderer2) {
-    this.list=["facebook","twitter","linkedin"];
+    this.list=["facebook","gitHub","linkedin"];
    }
   ngAfterViewInit(): void {
     this.AddClass();
@@ -30,12 +30,15 @@ export class SocialMediaComponent implements OnInit,AfterViewInit {
       switch (value) {
         case "facebook":
           this.render.addClass(element.nativeElement,"bi-facebook");
+          this.render.setAttribute(element.nativeElement,"href","https://www.facebook.com/dialber.pascualcadena");
           break;
         case "linkedin":
           this.render.addClass(element.nativeElement,"bi-linkedin");
+          this.render.setAttribute(element.nativeElement,"href","https://www.linkedin.com/in/dialber-pascual-cadenas-0462391a2/");
           break;
-        case "twitter":
-          this.render.addClass(element.nativeElement,"bi-twitter"); 
+        case "gitHub":
+          this.render.addClass(element.nativeElement,"bi-github"); 
+          this.render.setAttribute(element.nativeElement,"href","https://github.com/Dialber"); 
           break;
         default:
           break;

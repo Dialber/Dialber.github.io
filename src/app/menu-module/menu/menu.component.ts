@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit,AfterViewInit {
 
   list:string[];
   constructor(private menuService:MenuService,private render:Renderer2) {
-    this.list=["Inicio","Sobre mi","Skills","Proyectos","Contactos"]
+    this.list=["Inicio","Sobre mi","Skills","Proyectos","Contacto"]
    }
   ngAfterViewInit(): void {
     this.AddClass();   
