@@ -1,0 +1,53 @@
+@import"./vars";
+.link{
+    &:link{
+        color: $color-secundary;
+    }
+    &:visited{
+        color:$color-h2Number;
+    }
+    &:hover{
+        color:$color-h2Number;
+    }
+    &:active{
+        $color:darken($color-h2Number,50%)
+    }
+}
+.link--menu{   
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-weight: 200;
+    line-height: 2;
+    padding-right: 4rem;
+    &::before{
+        margin: 0 1.5rem;
+    } 
+    &:link{
+        color: $color-primary;
+    }
+    &:visited{
+        color:darken($color-h2Number, 20%);
+    }  
+    &:hover{
+        background-color: $color-primary;
+        color: $color-secundary;
+        
+    }
+}
+.link--socialMediaHeader{
+    padding: 0 .5rem;    
+    letter-spacing: $letter-spacing*1.2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+        display: none;
+    }
+
+}

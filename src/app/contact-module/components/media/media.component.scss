@@ -13,33 +13,25 @@ app-social-media ul.social{
 		justify-content: flex-start;
 		align-items: center;
 		padding: 2rem 1rem 2rem 10%;
-		.social__a{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			text-decoration: none;	
-			font-size: 0;	
-			padding: 0;
-			&::before{
-				display: block;
-				position: relative;
-				font-size: 1.5rem;
-				width: 1.5rem;
-				color: $color-secundary;
-				visibility: visible;
-				&:visited{
-					color: $color-h2Number;
-				}
-			}
-			&:visited{
-				color: $color-h2Number;
-			}
-		}
 		.social__li{
 			margin: 0 .5rem;
 			flex: 0;
 		}
+	}
+	.link--socialMediaHeader{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;	
+		font-size: 0;	
+		padding: 0;
+		&::before{
+			display: block;
+			position: relative;
+			font-size: 1.5rem;
+			width: 1.5rem;
+			visibility: visible;
+		}		
 	}
 
 }

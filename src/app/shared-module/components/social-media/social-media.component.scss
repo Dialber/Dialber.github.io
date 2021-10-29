@@ -11,27 +11,3 @@
     display: flex;
     margin-left: 1rem;
 }
-.social__a{
-    color:$color-secundary;
-    padding: 0 .5rem;    
-    letter-spacing: $letter-spacing*1.2;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover{
-        color:$color-h2Number;
-    }
-    &:active{
-        &:focus{
-            box-shadow: none;
-        }
-    }
-    &:visited{
-        color:$color-h2Number;
-    }
-    &::before{
-        display: none;
-    }
-    
-}

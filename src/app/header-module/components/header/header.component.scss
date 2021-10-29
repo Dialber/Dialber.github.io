@@ -105,9 +105,6 @@ app-menu{
     letter-spacing: $letter-spacing*1.2;
     position: relative;
     right: -1rem;
-    &:visited{
-        color:$color-h2Number;
-    }
 }
 app-social-media{
    display: none;
@@ -140,16 +137,7 @@ app-social-media{
     .contact{   
        display: inline-block;     
        transform: rotate(90deg);
-       color:$color-secundary;
        padding: 0 0.5rem;
-        &:hover{
-            color:$color-h2Number;
-        }
-        &:active{
-            &:focus{
-                box-shadow: none;
-            }
-        }
     }
     .containerMenu{
         height: 27rem;

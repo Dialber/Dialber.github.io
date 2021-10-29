@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit,AfterViewInit {
     this.list=["Inicio","Sobre mi","Skills","Proyectos","Contacto"]
    }
   ngAfterViewInit(): void {
-    this.AddClass();   
+    this.AddClassIconBootstrapHref();   
   }
 
    @ViewChildren("link") menu!:QueryList<ElementRef>;
@@ -25,7 +25,7 @@ export class MenuComponent implements OnInit,AfterViewInit {
   hideMenu():void{
     this.menuService.ChangeValue();
   }
-  private AddClass():void{
+  private AddClassIconBootstrapHref():void{
     this.menu.forEach(element => {
       var value:string;
       value=element.nativeElement.innerText;
