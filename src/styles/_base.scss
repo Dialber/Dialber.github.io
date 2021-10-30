@@ -70,8 +70,9 @@ button{
    justify-content: center;
    align-items: center;
    color: $color-secundary;
+   cursor: pointer;
     &:active{
-        transform: scale(.98);
+        transform: scale(.95);
     }
 }
 textarea{
@@ -99,6 +100,10 @@ button:focus-visible,
 :focus{
     outline: 0;
     box-shadow: 0 0 .1rem .1rem $color-secundary  
+}
+a:active{
+    box-shadow: none;
+    transform: scale(.95);
 }
 [type="submit"]{
     border: 0;

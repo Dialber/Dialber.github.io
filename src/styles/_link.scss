@@ -10,7 +10,8 @@
         color:$color-h2Number;
     }
     &:active{
-        $color:darken($color-h2Number,50%)
+        $color:darken($color-h2Number,50%);
+        transform: scale(.95);
     }
 }
 .link--menu{   
@@ -36,7 +37,9 @@
     &:hover{
         background-color: $color-primary;
         color: $color-secundary;
-        
+    }
+    &:focus{
+        box-shadow: 0 0 .1rem .1rem $color-primary;
     }
 }
 .link--socialMediaHeader{
@@ -50,4 +53,12 @@
         display: none;
     }
 
+}
+.link--projetc{
+    font-size: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    &:first-of-type{
+        margin-right: auto;        
+    }
 }

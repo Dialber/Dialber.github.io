@@ -12,6 +12,8 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
   @Input()imgDir:string="";
   @Input()description:string="";
   @Input()listTecnol:string[]=[];
+  @Input()dirGitHub:string="";
+  @Input()dirDepl:string="";
 
 
   slider:boolean=false;
@@ -21,12 +23,16 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
   @ViewChild('container')container!:ElementRef;
   @ViewChild('descript')descriptionElement!:ElementRef;
   @ViewChild('info')infoElement!:ElementRef;
+  @ViewChild('gitHubCode') codeGitHub! :ElementRef;
 
   constructor( private render:Renderer2) { }
   
   ngAfterViewInit(): void {
     if(this.imgDir!=""){
        this.render.setStyle(this.container.nativeElement,"background-image",`url(${this.imgDir})`);
+     }
+     if(this.dirGitHub=="#"){
+       this.render.setStyle(this.codeGitHub.nativeElement,"display","none");
      }
   }
 

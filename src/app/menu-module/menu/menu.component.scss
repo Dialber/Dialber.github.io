@@ -26,6 +26,9 @@
     &:hover{
         cursor: pointer;
     }
+    &:focus{
+        box-shadow: 0 0 .1rem .1rem $color-primary;
+    }
 
 }
 .menu__li{

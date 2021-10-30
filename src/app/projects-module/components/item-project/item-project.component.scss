@@ -34,6 +34,9 @@
     align-items: flex-start;
     font-size: $font-size-header-project;
 }
+button{
+    font-size: 2rem;
+}
 .closee{
     padding: 0;
     border: 0;
@@ -67,14 +70,6 @@ input[type=button]{
     justify-content: flex-end;
     align-items: center;
     align-self: flex-end;
-}
-.github__element{
-    font-size: 2rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    &:first-of-type{
-        margin-right: auto;        
-    }
 }
 .bi-info-circle{
     &:hover{

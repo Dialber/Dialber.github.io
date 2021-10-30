@@ -5,13 +5,14 @@
             <h4 class="title" [ngClass]="{setColor: changeColor}">{{title}}</h4>
         </div> 
         <ul class="github">
-            <li class="github__el hint--top-right" data-hint="Detalles"><button class="bi bi-info-circle github__element" aria-label="detalles del proyecto"  [ngClass]="{setColor: changeColor}" (click)="showhide()" #info></button></li>
-            <li class="github__el hint--top-left" data-hint="GitHub"><a aria-label="github" href="#"class="link bi bi-github github__element" [ngClass]="{setColor: changeColor}"></a></li>
-            <li class="github__el hint--top-left" data-hint="Despliegue"><a aria-label="despliegue"  href="#"class="link bi bi-cloud github__element" [ngClass]="{setColor: changeColor}"></a></li>
+            <li class="github__el hint--top-right" data-hint="Detalles"><button class="bi bi-info-circle" aria-label="detalles del proyecto"  [ngClass]="{setColor: changeColor}" (click)="showhide()" #info></button></li>
+            <li class="github__el hint--top-left" data-hint="GitHub"><a aria-label="github" target="_blank" [href]="dirGitHub"class="link link--projetc bi bi-github" [ngClass]="{setColor: changeColor}" #gitHubCode></a></li>
+            <li class="github__el hint--top-left" data-hint="Despliegue"><a aria-label="despliegue" target="_blank" [href]="dirDepl"class="link link--projetc bi bi-cloud" [ngClass]="{setColor: changeColor}"></a></li>
         </ul>
     </div>
     <div class="description" [ngClass]="{moveDown: moveDescription}" #descript>
         <p>{{description}}</p>
+        <p>Tecnologías utilizadas:</p>
         <ul class="listTecnol">
             <li *ngFor="let item of listTecnol" class="listTecnol__item">{{item}}</li>
         </ul>

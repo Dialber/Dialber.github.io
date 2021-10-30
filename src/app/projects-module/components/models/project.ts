@@ -3,4 +3,6 @@ export interface Project {
     img:string;
     description:string,
     array:string[];
+    dirGitHub:string;
+    dirDepl:string;
 }
