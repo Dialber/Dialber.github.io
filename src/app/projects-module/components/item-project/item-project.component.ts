@@ -42,8 +42,10 @@ export class ItemProjectComponent implements OnInit,AfterViewInit {
   /*changeColorGithub()---> En este método modifico el color de los iconos de github y nube,cuando hago 
   el hover en en elemento wraper*/
   changeColorGithub():void{
-    this.slider=true;
+    if(this.title!="Portafolio"){
     this.changeColor=true;
+    }
+    this.slider=true;
   }
   RestoreColorGithub():void{
     this.slider=false;  

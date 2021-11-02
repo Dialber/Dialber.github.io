@@ -1,15 +1,11 @@
 @import "./vars";
-@font-face {
-    font-family:'Open Sans', sans-serif;
-    src: ('assets/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
-}
 body{
     width: 100%;
 	text-align: center;
     margin: 0 auto;
     color: $color-secundary;
     background-color: $color-primary;
-    font-family:'OpenSans', sans-serif;
+    font-family:'OpenSans-Light', sans-serif;
     font-size: 85%;
     letter-spacing: $letter-spacing;
     word-spacing: $word-spacing; 
@@ -27,27 +23,28 @@ html, body{
     
 }
 h1{
+    font-family: 'OpenSans-SemiBold',sans-serif;
     font-size: $font-h1;
-    font-weight: 300;
-    line-height: 1.2;
     text-align: left;
     padding-right: 2rem;
 }
-h2,h3{    
-    line-height:1.2;
+h2,h3{ 
     font-weight: 100;
     margin: 0 0 .2rem 0;
 }
 h3{
+    font-family: 'OpenSans-SemiBold',sans-serif;
     font-size: $font-h3;
 }
 h4{
     font: $font-h4;
     margin: 0;
+    font-family: 'OpenSans-SemiBold',sans-serif;
 }    
 h2{
     font-size: $font-h2;
     color: $color-h2Number;
+    font-family: 'OpenSans-ExtraBold',sans-serif;
 }
 img,video{
     max-width: 100%;
@@ -83,6 +80,9 @@ textarea{
 label{
     text-align: left;
 }
+span{
+    font-family: 'OpenSans-SemiBold',sans-serif;
+}
 ::placeholder{
     color:$color-primary;    
     text-transform: capitalize;
@@ -97,10 +97,7 @@ button:focus-visible,
     outline: 0;
 }
 
-:focus{
-    outline: 0;
-    box-shadow: 0 0 .1rem .1rem $color-secundary  
-}
+
 a:active{
     box-shadow: none;
     transform: scale(.95);
@@ -108,6 +105,7 @@ a:active{
 [type="submit"]{
     border: 0;
 }
+a,
 button,
 input,
 optgroup,
@@ -116,6 +114,10 @@ textarea{
     line-height:$line-height;
     box-sizing: border-box;
     border:0;    
+    &:focus{
+        outline: 0;
+        box-shadow: 0 0 0 .1rem $color-secundary  
+    }
 }
 ul{
     margin: 0;

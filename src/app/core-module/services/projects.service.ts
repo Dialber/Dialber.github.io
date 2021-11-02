@@ -9,7 +9,7 @@ export class ProjectsService {
   constructor() { 
     this.list=[
       {
-        title:"Portafolio",img:"assets/img/projects/Restaurant.jpg",
+        title:"Portafolio",img:"assets/img/projects/Portafolio.jpg",
         description:" Mi sitio personal, al que le he puesto tanto entusiasmo, ahora sabe a poco, pero con el tiempo irá creciendo",
         array:["Angular","Scss","EmailJs","BoostrapIcons","FontAwesome"],
         dirGitHub:"#",
@@ -34,8 +34,8 @@ export class ProjectsService {
        title:"Consultoría",img:"assets/img/projects/Maqueta-morris.jpg",
        description:"Maquetación de un sitio dedicado a la asesoría en problemas de negocio o necesidades empresariales",
        array:["Html","Scss","FontAwesome","MorrisJS"],
-       dirGitHub:"https://github.com/Dialber/grafica-morris",
-       dirDepl:"https://dialber.github.io/grafica-morris/",
+       dirGitHub:"https://github.com/Dialber/Consultoria",
+       dirDepl:"https://dialber.github.io/Consultoria/",
       }]
   }
   GetList():Project[]{

@@ -29,7 +29,10 @@
         background-color: $color-secundary;
     }
     &:focus{
-        border-color: $color-primary;
+        border-color: $color-secundary;
+        box-shadow: 0 0 0 0.2rem $color-primary,
+                    0 0 0 0.3rem $color-secundary
+
     }
 }
 @media #{$tablets}{

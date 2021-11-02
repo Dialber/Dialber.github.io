@@ -1,5 +1,6 @@
     @import"../../../../styles/vars";  
     @import"../../../../styles/mixins";
+    @import"../../../../styles/fonts";
     app-data{
         width: 100%;
         height: 100%;
@@ -32,8 +33,11 @@
             align-items: left;
             flex: 0;
         }
-        .ulData__title,.ulData__value{
-            font-size: $font-inputText;
+        .ulData__title{
+            font-size: $font-dataHeader - .2rem;
+        }
+        .ulData__value{
+          font-size: .9rem;
         }
     }
     @media #{$tablets}{
