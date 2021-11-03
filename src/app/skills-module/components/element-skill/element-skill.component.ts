@@ -7,11 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ElementSkillComponent implements OnInit {
 
-  @Input()value:number=0;
   @Input()title:string="";
+  @Input()value:number=0;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  getValue():string{
+    return this.value.toString()+"%";
+  }
 }

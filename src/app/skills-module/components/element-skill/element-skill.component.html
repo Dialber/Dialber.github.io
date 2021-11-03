@@ -1,4 +1,7 @@
 <div class="container">
     <label class="title" [for]="title">{{title}}</label>
-    <progress class="progres" [value]="value" max="100" [id]="title"></progress>
+   <!--  <progress class="progres" [value]="value" max="100" [id]="title"></progress> -->
+    <div class="progress" [id]="title">
+        <div class="progress__item" [ngStyle]="{width:getValue()}"></div>
+    </div>
 </div>
