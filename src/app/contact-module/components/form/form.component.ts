@@ -33,8 +33,9 @@ export class FormComponent implements OnInit {
       message : new FormControl('')
     });
   }
-  public Senddata(event:Event):void{
-    this.sendFormService.sendEmail(event);   
+  public async Senddata(event:Event){
+    await this.sendFormService.sendEmail(event);   
+    this.myForm?.reset();
   }
   getError(controlName:string):string{
     const control=this.myForm?.get(controlName);
