@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { environment } from 'src/environments/environment.prod';
+
 
 
 @Injectable()
 export class SendFormService {
 
-  private services_id:string="gmail";
-  private template_id:string="template_rgjzltr";
-  private user_id:string="user_nRzsBdYQolgdhvvi6KuA5";
+  private services_id:string=environment.services_id;
+  private template_id:string=environment.template_id;
+  private user_id:string=environment.user_id;
 
   constructor() { }
 
